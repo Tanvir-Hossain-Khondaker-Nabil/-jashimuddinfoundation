@@ -1,6 +1,5 @@
 import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
-import { Modal } from 'react-bootstrap';
 
 const CharityWrapper = () => {
   return (

@@ -1,5 +1,4 @@
 import React from "react";
-import Audios from "../../public/images/home/audio.mp3";
 
 export default function Audio() {
   return (
