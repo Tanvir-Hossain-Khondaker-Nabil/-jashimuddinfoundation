@@ -76,8 +76,6 @@
   font-size: 2.625rem;
 }
 
-/*|| font size classes ||*/
-/*|| font weight classes ||*/
 .fw100 {
   font-weight: 100;
 }
@@ -114,7 +112,6 @@
   font-weight: 900;
 }
 
-/*|| font weight classes ||*/
 .fontbold {
   font-family: 'Montserrat-Bold';
 }
@@ -135,7 +132,6 @@
   font-family: 'Montserrat-Light';
 }
 
-/*|| Text color classes ||*/
 .txtPink {
   color: #E5AE49;
 }
@@ -148,8 +144,6 @@
   color: #ffffff;
 }
 
-/*|| Text color classes ||*/
-/*|| Border color classes ||*/
 .borderPink {
   border-color: #E5AE49;
 }
@@ -162,8 +156,6 @@
   border-color: #111111;
 }
 
-/*|| Border color classes ||*/
-/*|| Backgorund color classes ||*/
 .bgPink {
   background-color: #E5AE49;
 }
@@ -175,8 +167,6 @@
 .bgBlack {
   background-color: #000;
 }
-
-/*|| Backgorund color classes ||*/
 @font-face {
   font-family: 'verdana';
   src: url("../font/verdana.ttf");
@@ -269,8 +259,6 @@ ul {
   margin-top: 20px;
 }
 
-/*------ responsive ----*/
-/* PRELOADER CSS */
 .page-loader {
   background-color: #111111;
   bottom: 0;
@@ -294,7 +282,6 @@ ul {
   line-height: 1.5;
 }
 
-/* SPINNER ANIMATION */
 .spinner {
   position: relative;
   top: 35%;
@@ -316,8 +303,6 @@ ul {
   }
 }
 
-/*-- Preloader css start --*/
-/*-- Preloader css End --*/
 .custom-container {
   max-width: 1520px !important;
 }
@@ -564,12 +549,6 @@ ul {
   transition: all 0.5s;
 }
 
-/* ....................................
-1.1 Header CSS 
-.......................................*/
-/*--------
-header css
---------*/
 .main-header-wrapper1 {
   position: relative;
   z-index: 999;
@@ -3679,9 +3658,7 @@ header css
   background-color: #E5AE49;
 }
 
-/*---------
- ibadat-audio-main-wrapper Css Start
------------*/
+
 .ibadat-audio-main-wrapper {
   width: 100%;
   padding: 60px 0px;
@@ -3765,9 +3742,7 @@ header css
   animation-name: pulse;
 }
 
-/*---------
- ibadat-about-main-wrapper Css Start
------------*/
+
 .ibadat-about-main-wrapper {
   width: 100%;
   padding: 60px 0px;
@@ -3897,9 +3872,7 @@ header css
   animation: inherit;
 }
 
-/*---------
- ibadat-five-pillars-main-wrapper Css Start
------------*/
+
 .ibadat-five-pillars-main-wrapper {
   width: 100%;
   padding: 60px 0px 140px;
@@ -4071,9 +4044,6 @@ header css
   background-color: #E5AE49;
 }
 
-/*---------
- ibadat-charity-main-wrapper Css Start
------------*/
 .ibadat-charity-main-wrapper {
   width: 100%;
   padding: 60px 0px;
@@ -4210,9 +4180,6 @@ header css
   z-index: -1;
 }
 
-/*---------
- ibadat-upcoming-events-main-wrapper Css Start
------------*/
 .ibadat-upcoming-events-main-wrapper {
   width: 100%;
   padding: 60px 0px;
@@ -4422,9 +4389,7 @@ header css
   height: 322px;
 }
 
-/*---------
- ibadat-service-main-wrapper Css Start
------------*/
+
 .ibadat-service-main-wrapper {
   width: 100%;
   padding: 60px 0px 140px;
@@ -4536,9 +4501,7 @@ header css
   background-color: #009146;
 }
 
-/*---------
- ibadat-praying-main-wrapper Css Start
------------*/
+
 .ibadat-praying-main-wrapper {
   width: 100%;
   padding: 60px 0px;
@@ -4745,9 +4708,7 @@ header css
   height: 322px;
 }
 
-/*---------
- ibadat-islamic-praying-main-wrapper Css Start
------------*/
+
 .ibadat-islamic-praying-main-wrapper {
   width: 100%;
   padding: 60px 0px;
@@ -4865,9 +4826,7 @@ header css
   padding-top: 5px;
 }
 
-/*---------
- ibadat-testimonial-main-wrapper Css Start
------------*/
+
 .ibadat-testimonial-main-wrapper {
   width: 100%;
   padding: 60px 0px;
@@ -5078,9 +5037,7 @@ header css
   fill: #009146;
 }
 
-/*---------
- ibadat-gallery-main-wrapper Css Start
------------*/
+
 .ibadat-gallery-main-wrapper {
   width: 100%;
   padding: 60px 0px;
@@ -5304,9 +5261,7 @@ header css
   width: 30%;
 }
 
-/*---------
-ibadat-stay-connected-main-wrapper Css Start
------------*/
+
 .ibadat-stay-connected-main-wrapper {
   width: 100%;
   padding: 60px 0px;
@@ -5399,9 +5354,7 @@ ibadat-stay-connected-main-wrapper Css Start
   color: #E5AE49;
 }
 
-/*---------
- ibadat-our-team-main-wrapper Css Start
------------*/
+
 .ibadat-our-team-main-wrapper {
   width: 100%;
   padding: 60px 0px;
@@ -5701,9 +5654,7 @@ ibadat-stay-connected-main-wrapper Css Start
   border-bottom-left-radius: 20px;
 }
 
-/*---------
- ibadat-subcribe-main-wrapper Css Start
------------*/
+
 .ibadat-subcribe-main-wrapper {
   width: 100%;
   padding: 60px 0px;
@@ -5789,19 +5740,14 @@ ibadat-stay-connected-main-wrapper Css Start
   height: 97px;
 }
 
-/* ....................................
-1.1 INDEX 02 CSS 
-.......................................*/
-/*---------
- ibadat-main-banner-wrapper Css Start
------------*/
+
 .ibadat-home-sec-banner-wrapper {
   width: 100%;
   background-image: url("../images/home2/banner-bg.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 140px 0px;
+  padding: 100px 0px;
   position: relative;
 }
 
@@ -7233,9 +7179,6 @@ ibadat-stay-connected-main-wrapper Css Start
   line-height: 50px;
 }
 
-/* ....................................
-1.1 LOGIN 03 CSS 
-.......................................*/
 .food-login-page-main-wrapper {
   width: 100%;
   padding: 175px 0px;
@@ -7448,9 +7391,6 @@ ibadat-stay-connected-main-wrapper Css Start
   width: 530px;
 }
 
-/* ....................................
-1.2 SHORTCODE 03 CSS 
-.......................................*/
 a {
   text-decoration: none;
   color: #111111;
@@ -7479,8 +7419,6 @@ ul {
   color: #111111;
 }
 
-/*===================================== ACCORDION PAGE START ================================*/
-/*============================ first accordion ==============================*/
 .accor-heading {
   margin-bottom: 30px;
 }
@@ -7520,7 +7458,6 @@ ul {
   border-left: 2px solid #E5AE49;
 }
 
-/*============================ second accordion ==============================*/
 .accordion2-wrapper {
   background-color: #232323;
 }
@@ -7586,7 +7523,6 @@ ul {
   display: none;
 }
 
-/*============================ Third accordion ==============================*/
 .accordion3-wrapper {
   background-color: #f7f7f7;
 }
@@ -7631,7 +7567,6 @@ ul {
   transform: rotate(90deg);
 }
 
-/*============================ Fourth accordion ==============================*/
 .accordion4-wrapper .accordion-button:focus {
   border: none;
   box-shadow: none;
@@ -7692,7 +7627,6 @@ ul {
   font-size: 24px;
 }
 
-/*============================ Five accordion ==============================*/
 .accordion5-wrapper {
   background-color: #E5AE49;
 }
@@ -7764,8 +7698,6 @@ ul {
   color: #ffffff;
 }
 
-/*=================================== ACCORDION PAGE END ===============================*/
-/*======================BUTTON PAGE START ==============================*/
 .section-heading {
   margin-bottom: 50px;
 }
@@ -7957,7 +7889,6 @@ ul {
   color: #ffffff;
 }
 
-/*fifth button section*/
 .button5-wrapper {
   text-align: center;
   background-color: #232323;
@@ -8039,7 +7970,6 @@ ul {
   background-position: right center;
 }
 
-/*six button section*/
 .button6-wrapper {
   text-align: center;
 }
@@ -8128,7 +8058,6 @@ ul {
   color: #ffffff;
 }
 
-/*seven button section*/
 .button7-wrapper {
   text-align: center;
   background-color: #f7f7f7;
@@ -8280,7 +8209,6 @@ ul {
   align-items: center;
 }
 
-/* Nine button section */
 .button9-wrapper {
   text-align: center;
 }
@@ -8420,7 +8348,6 @@ ul {
   color: #ffffff;
 }
 
-/*Eleven button section*/
 .button12-wrapper {
   text-align: center;
 }
@@ -8449,15 +8376,12 @@ ul {
   box-shadow: none;
 }
 
-/*RESPONSIVE CSS*/
-/*--width 1199 --*/
 @media (max-width: 1199px) {
   .btn-sizes a {
     font-size: 14px;
   }
 }
 
-/*--width 991 --*/
 @media (max-width: 991px) {
   .btn-sizes a {
     display: block !important;
@@ -8471,8 +8395,6 @@ ul {
   }
 }
 
-/*======================BUTTON PAGE END =======================*/
-/*=====================================CLIENT PAGE START ===============================*/
 .client1-wrapper {
   background-color: #f7f7f7;
   text-align: center;
@@ -8585,14 +8507,10 @@ ul {
   width: auto;
 }
 
-/*=================================== CLIENT PAGE END ===============================*/
-/*======================== Google Map section ===================*/
 .g-map1-section .h-500px {
   height: 500px;
 }
 
-/*=========================== TAB PAGE START ====================*/
-/*------ tab-one ------*/
 .tab-one-wrapper .tab-one .nav-tabs {
   border: none;
 }
@@ -8678,7 +8596,6 @@ ul {
   width: 100%;
 }
 
-/*-------- tab-two ------*/
 .tab-two-wrapper {
   background-color: #f7f7f7;
 }
@@ -8750,8 +8667,6 @@ ul {
   padding: 12px 0 0 0;
 }
 
-/*------ tab-two-end -----*/
-/*------- tab-three-start ------*/
 .tab-three-wrapper .nav-pills .nav-item {
   padding: 0 30px;
 }
@@ -8791,8 +8706,6 @@ ul {
   background-color: #232323;
 }
 
-/*-------- tab-four-start --------*/
-/*------- tab-five-start ---------*/
 .tab-five-wrapper .nav-pills {
   border-top: 1px solid #80808082;
   border-bottom: 1px solid #80808082;
@@ -8877,8 +8790,6 @@ ul {
   }
 }
 
-/*==================== FORM PAGE START ====================*/
-/*--------- form-one-start ---------*/
 .form-control {
   padding: 12px 10px;
 }

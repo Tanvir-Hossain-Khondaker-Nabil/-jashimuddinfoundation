@@ -191,7 +191,7 @@ export default function TeamWrapper() {
               </div>
               <div className="team-content">
                 <h4>
-                  <a href="team.html">Wajid Malik</a>
+                  <a>Wajid Malik</a>
                 </h4>
                 <h5>(Volunteer)</h5>
               </div>
@@ -377,7 +377,7 @@ export default function TeamWrapper() {
               </div>
               <div className="team-content">
                 <h4>
-                  <a href="team.html">Hasib Bin Asfaque</a>
+                  <a>Hasib Bin Asfaque</a>
                 </h4>
                 <h5>(Imam)</h5>
               </div>

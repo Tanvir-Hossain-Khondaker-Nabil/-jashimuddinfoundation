@@ -9,9 +9,9 @@ export default function PrayingWrapper() {
             <h4>Islamic Prayer</h4>
             <h2>Learn How to Pray Namazs</h2>
           </div>
-          <div className="namaj-wrapper wow fadeInUp" data-wow-delay="500ms">
+          <div className="namaj-wrapper wow">
             <img src="images/home/nawaj.png" alt="img" />
-            <a className="redButton" href="learn-pray.html">
+            <a className="redButton">
               <span>Learn More</span>
             </a>
           </div>

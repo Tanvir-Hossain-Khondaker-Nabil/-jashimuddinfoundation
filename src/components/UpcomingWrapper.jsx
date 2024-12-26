@@ -12,7 +12,7 @@ const UpcomingWrapper = () => {
         </div>
         <div className="home-sec-up-slider-wrapper">
           <OwlCarousel className="owl-carousel owl-theme" items={1} loop nav>
-            {/* Event 1 */}
+            
             <div className="item">
               <div className="upcoming-item">
                 <div className="upcoming-img">

@@ -4,8 +4,6 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 export default function TestimonialWrapper() {
   useEffect(() => {
-    // Initialize jQuery for Owl Carousel
-    // The component will handle initialization automatically but this ensures it's ready
     $(document).ready(function () {
       $(".owl-carousel").owlCarousel();
     });
@@ -23,12 +21,12 @@ export default function TestimonialWrapper() {
           <div className="test-slider-wrapper">
             <OwlCarousel
               className="owl-carousel owl-theme"
-              items={1} // Only show one item at a time
+              items={1} 
               loop={true}
               autoplay={true}
-              autoplayTimeout={5000} // Autoplay every 5 seconds
-              dots={true} // Show dots for navigation
-              nav={false} // Hide next/prev buttons
+              autoplayTimeout={5000} 
+              dots={true} 
+              nav={false} 
             >
               <div className="item">
                 <div className="testi-item">
