@@ -1,16 +1,44 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import Axios from "axios";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-const InnerSilder = () => {
+const InnerSlider = () => {
+  const [slides, setSlides] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
   useEffect(() => {
-    // Initialize jQuery for Owl Carousel
-    // The component will handle initialization automatically but this ensures it's ready
-    $(document).ready(function () {
-      $(".owl-carousel").owlCarousel();
-    });
+    Axios.get("https://jashimuddinfoundation.com/admin/public/api/sliders")
+      .then((response) => {
+        const data = response.data || [];
+        if (data.length === 0) {
+          // Gracefully handle empty slides
+          setSlides([]);
+        } else {
+          setSlides(data);
+        }
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+        setError(error.message);
+        setLoading(false);
+      });
   }, []);
+
+  if (loading) {
+    return <div></div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  if (slides.length === 0) {
+    return <div>No slides available.</div>;
+  }
 
   return (
     <div className="ibadat-home-sec-banner-wrapper">
@@ -24,66 +52,20 @@ const InnerSilder = () => {
             margin={10}
             nav
           >
-            <div className="item">
-              <div className="home-sec-inner-slider">
-                <div className="slider-img">
-                  <img src="images/home2/slide1.png" alt="img" />
-                </div>
-                <div className="slider-content">
-                  <img src="images/home2/text-img.png" alt="img" />
-                  <h4>O’ Allah We Belive</h4>
-                  <h2>That Only You Can Save Us</h2>
-                  {/* <a className="redButton" href="javascript:;">
-                    <span>Learn More</span>
-                  </a> */}
-                </div>
-              </div>
-            </div>
-            <div className="item">
-              <div className="home-sec-inner-slider">
-                <div className="slider-img">
-                  <img src="images/home2/slide2.png" alt="img" />
-                </div>
-                <div className="slider-content">
-                  <img src="images/home2/text-img.png" alt="img" />
-                  <h4>O’ Allah We Belive</h4>
-                  <h2>Nothing Is Impossible Allah</h2>
-                  {/* <a className="redButton" href="javascript:;">
-                    <span>Learn More</span>
-                  </a> */}
+            {slides.map((slide) => (
+              <div className="item" key={slide.id}>
+                <div className="home-sec-inner-slider">
+                  <div className="slider-img">
+                    <img src={`https://jashimuddinfoundation.com/admin/public/${slide.slider_photo}`} alt="slider-img" />
+                  </div>
+                  <div className="slider-content">
+                    <img src={`https://jashimuddinfoundation.com/admin/public/${slide.info_photo}`} alt="text-img" />
+                    <h4>{slide.info_title}</h4>
+                    <h2>{slide.title}</h2>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="item">
-              <div className="home-sec-inner-slider">
-                <div className="slider-img">
-                  <img src="images/home2/slide3.png" alt="img" />
-                </div>
-                <div className="slider-content">
-                  <img src="images/home2/text-img.png" alt="img" />
-                  <h4>O’ Allah We Belive</h4>
-                  <h2>Invited to The Home Of Peace</h2>
-                  {/* <a className="redButton" href="javascript:;">
-                    <span>Learn More</span>
-                  </a> */}
-                </div>
-              </div>
-            </div>
-            <div className="item">
-              <div className="home-sec-inner-slider">
-                <div className="slider-img">
-                  <img src="images/home2/slide2.png" alt="img" />
-                </div>
-                <div className="slider-content">
-                  <img src="images/home2/text-img.png" alt="img" />
-                  <h4>O’ Allah We Belive</h4>
-                  <h2>Nothing Is Impossible Allah</h2>
-                  {/* <a className="redButton" href="javascript:;">
-                    <span>Learn More</span>
-                  </a> */}
-                </div>
-              </div>
-            </div>
+            ))}
           </OwlCarousel>
         </div>
       </div>
@@ -174,4 +156,4 @@ const InnerSilder = () => {
   );
 };
 
-export default InnerSilder;
+export default InnerSlider;

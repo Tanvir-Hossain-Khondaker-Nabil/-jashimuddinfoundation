@@ -1,3 +1,9 @@
 .slider-content{
     margin-top: 50px;
 }
+
+.portfolio_img img{
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}

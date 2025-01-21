@@ -1382,7 +1382,7 @@ ul {
 .ibadat-inner-banner-main-wrapper {
   width: 100%;
   padding: 60px 0px;
-  background-image: url("../images/home/inner-banner.png");
+  background-image: url("https://webstrot.com/html/ibadat/ibadat/images/home/inner-banner.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -6890,13 +6890,14 @@ ul {
 
 .ibadat-home-sec-gallery-main-wrapper .tab-content .tab-pane .gallery-main-wrapper {
   display: flex;
-  gap: 24px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .ibadat-home-sec-gallery-main-wrapper .tab-content .tab-pane .gallery-main-wrapper .portfolio_img_wrapper {
-  width: 70%;
-  text-align: center;
+  width: 33% !important;
+  text-align: center!important;
+  padding: 8px 10px!important;
 }
 
 .ibadat-home-sec-gallery-main-wrapper .tab-content .tab-pane .gallery-main-wrapper .portfolio_img_wrapper .portfolio_img {

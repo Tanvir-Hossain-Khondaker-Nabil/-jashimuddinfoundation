@@ -16,6 +16,10 @@ import "../public/css/responsive.css";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import AboutPage from "./pages/AboutPage";
+import Service from "./pages/Service";
+import SingleService from "./pages/SingleService";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -24,6 +28,10 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/services" element={<Service/>} />
+          <Route path="/single-service/:id" element={<SingleService/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>
